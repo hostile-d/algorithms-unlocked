@@ -21,12 +21,12 @@ function generateState(p, alphabet) {
     //         nextState[i][alphabet[j]] = k;
     //     }
     // }
-    return nextState;
+    // return nextState;
 }
 const t = 'GTAACAGTAAACG';
 const p = 'AAC';
 const alphabet = 'ACGT';
-const nextState = generateState(p, alphabet);
+// const nextState = generateState(p, alphabet);
 const nextState = [
     { A: 1, C: 0, G: 0, T: 0 },
     { A: 2, C: 0, G: 0, T: 0 },
