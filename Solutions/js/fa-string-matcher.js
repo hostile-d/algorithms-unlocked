@@ -11,11 +11,15 @@ function faStringMatcher(t, nextState, m) {
 
 function generateState(p, alphabet) {
     const m = p.length;
-    for (let i = 0; i < m; i++) {
+
+    let nextState = [];
+    for (let i = 0; i < m + 1; i++) {
+        //i is iterating over FA states
+        nextState[i] = {};
         for (let j = 0; j < alphabet.length; j++) {
-            let k = Math.min(m + 1, i + 2);
-            //https://github.com/onurozuduru/string-matcher-project
-            while (p[k] === p[i] + alphabet[j]) {
+            //j is iterating over all alphabet characters
+            let k = Math.min(m, i + 1);
+            while (!(p.slice(0, i) + alphabet[j]).endsWith(p.slice(0, k))) {
                 k--;
             }
             nextState[i][alphabet[j]] = k;
@@ -23,15 +27,11 @@ function generateState(p, alphabet) {
     }
     return nextState;
 }
+
 const t = 'GTAACAGTAAACG';
 const p = 'AAC';
 const alphabet = 'ACGT';
-// const nextState = generateState(p, alphabet);
-const nextState = [
-    { A: 1, C: 0, G: 0, T: 0 },
-    { A: 2, C: 0, G: 0, T: 0 },
-    { A: 2, C: 3, G: 0, T: 0 },
-    { A: 1, C: 0, G: 0, T: 0 }
-];
+const nextState = generateState(p, alphabet);
 
 const result = faStringMatcher(t, nextState, p.length);
+console.log(result);
