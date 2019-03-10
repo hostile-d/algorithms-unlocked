@@ -1,7 +1,6 @@
 .history/
 .vscode/
-Solutions/cs/AlgorithmsUnlocked/.vs
-*/bin/*
-*/obj/*
-.vs/*
 *.orig
+Solutions/cs/AlgorithmsUnlocked/.vs
+Solutions/cs/AlgorithmsUnlocked/AlgorithmsUnlocked/obj
+Solutions/cs/AlgorithmsUnlocked/AlgorithmsUnlocked/bin
