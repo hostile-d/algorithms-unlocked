@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{2FA1A884-4F67-4167-A123-570FB96DA7CB}|Default">
+  <MonoDevelop.Ide.ItemProperties.AlgorithmsUnlocked FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AlgorithmsUnlocked/Euclid.cs">
+    <Files>
+      <File FileName="AlgorithmsUnlocked/Program.cs" Line="1" Column="1" />
+      <File FileName="AlgorithmsUnlocked/Euclid.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AlgorithmsUnlocked" expanded="True">
+            <Node name="AlgorithmsUnlocked" expanded="True">
+              <Node name="Euclid.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

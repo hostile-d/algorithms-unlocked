@@ -10,18 +10,18 @@ function faStringMatcher(t, nextState, m) {
 }
 
 function generateState(p, alphabet) {
-    // const m = p.length;
-    // for (let i = 0; i < m; i++) {
-    //     for (let j = 0; j < alphabet.length; j++) {
-    //         let k = Math.min(m + 1, i + 2);
-    //         //https://github.com/onurozuduru/string-matcher-project
-    //         while (p[k] === p[i] + alphabet[j]) {
-    //             k--;
-    //         }
-    //         nextState[i][alphabet[j]] = k;
-    //     }
-    // }
-    // return nextState;
+    const m = p.length;
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < alphabet.length; j++) {
+            let k = Math.min(m + 1, i + 2);
+            //https://github.com/onurozuduru/string-matcher-project
+            while (p[k] === p[i] + alphabet[j]) {
+                k--;
+            }
+            nextState[i][alphabet[j]] = k;
+        }
+    }
+    return nextState;
 }
 const t = 'GTAACAGTAAACG';
 const p = 'AAC';
