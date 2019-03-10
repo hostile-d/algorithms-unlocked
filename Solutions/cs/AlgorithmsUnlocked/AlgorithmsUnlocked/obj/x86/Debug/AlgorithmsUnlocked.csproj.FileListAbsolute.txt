@@ -1,5 +1,0 @@
-/Users/admin/Desktop/Algorithms Unlocked/latest/Solutions/cs/AlgorithmsUnlocked/AlgorithmsUnlocked/bin/Debug/AlgorithmsUnlocked.exe
-/Users/admin/Desktop/Algorithms Unlocked/latest/Solutions/cs/AlgorithmsUnlocked/AlgorithmsUnlocked/bin/Debug/AlgorithmsUnlocked.pdb
-/Users/admin/Desktop/Algorithms Unlocked/latest/Solutions/cs/AlgorithmsUnlocked/AlgorithmsUnlocked/obj/x86/Debug/AlgorithmsUnlocked.csproj.CoreCompileInputs.cache
-/Users/admin/Desktop/Algorithms Unlocked/latest/Solutions/cs/AlgorithmsUnlocked/AlgorithmsUnlocked/obj/x86/Debug/AlgorithmsUnlocked.exe
-/Users/admin/Desktop/Algorithms Unlocked/latest/Solutions/cs/AlgorithmsUnlocked/AlgorithmsUnlocked/obj/x86/Debug/AlgorithmsUnlocked.pdb
