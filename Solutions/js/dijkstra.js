@@ -1,4 +1,6 @@
-function Dijkstra(Graph, s) {
+const { insert, extractMin, relax } = require('./utils');
+
+function dijkstra(Graph, s) {
     const shortest = {};
     const prev = {};
     const Q = {};
@@ -9,38 +11,20 @@ function Dijkstra(Graph, s) {
         } else {
             shortest[v] = Infinity;
         }
-
         prev[v] = null;
-        Q[v] = Graph[v];
+        insert(Q, v, Graph);
     }
+
     while (Object.keys(Q).length > 0) {
-        let u = null;
-        let smallest = Infinity;
-
-        for (v in shortest) {
-            if (Q[v] && shortest[v] < smallest) {
-                smallest = shortest[v];
-                u = v;
-            }
-        }
-
-        delete Q[u];
+        const u = extractMin(Q, v, shortest);
 
         for (v in Graph) {
             if (Graph[u][v]) {
-                Relax(u, v, shortest, prev, Graph);
+                relax(u, v, shortest, prev, Graph);
             }
         }
     }
     return { shortest, prev };
-}
-
-function Relax(u, v, shortest, prev, Graph) {
-    const weight = Graph[u][v];
-    if (shortest[u] + weight < shortest[v]) {
-        shortest[v] = shortest[u] + weight;
-        prev[v] = u;
-    }
 }
 
 const graph = {
@@ -51,5 +35,5 @@ const graph = {
     z: { x: 5, s: 7 }
 };
 
-const { shortest, prev } = Dijkstra(graph, graph.s);
+const { shortest, prev } = dijkstra(graph, graph.s);
 console.log(shortest, prev);

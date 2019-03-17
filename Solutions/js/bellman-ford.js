@@ -1,3 +1,4 @@
+const { relax } = require('./utils');
 const graph = {
     s: { t: 6, y: 7 },
     y: { x: -3, z: 9 },
@@ -5,13 +6,7 @@ const graph = {
     x: { t: -2 },
     z: { s: 7 }
 };
-function Relax(u, v, shortest, prev, Graph) {
-    const weight = Graph[u][v];
-    if (shortest[u] + weight < shortest[v]) {
-        shortest[v] = shortest[u] + weight;
-        prev[v] = u;
-    }
-}
+
 function BellmanFord(Graph, s) {
     const shortest = {};
     const prev = {};
@@ -29,7 +24,7 @@ function BellmanFord(Graph, s) {
     for (let i = 0; i < Object.keys(Graph).length; i++) {
         const u = Object.keys(Graph)[i];
         for (v in Graph[u]) {
-            Relax(u, v, shortest, prev, Graph);
+            relax(u, v, shortest, prev, Graph);
         }
     }
 
