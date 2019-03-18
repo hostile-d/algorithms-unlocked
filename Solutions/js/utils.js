@@ -5,9 +5,7 @@ function relax(u, v, shortest, prev, Graph) {
         prev[v] = u;
     }
 }
-function insert(Q, v, Graph) {
-    Q[v] = Graph[v];
-}
+
 function extractMin(Q, v, shortest) {
     let u = null;
     let smallest = Infinity;
@@ -20,4 +18,4 @@ function extractMin(Q, v, shortest) {
     delete Q[u];
     return u;
 }
-module.exports = { insert, extractMin, relax };
+module.exports = { extractMin, relax };

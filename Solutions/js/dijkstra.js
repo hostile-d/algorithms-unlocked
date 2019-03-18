@@ -1,4 +1,4 @@
-const { insert, extractMin, relax } = require('./utils');
+const { extractMin, relax } = require('./utils');
 
 function dijkstra(Graph, s) {
     const shortest = {};
@@ -12,7 +12,7 @@ function dijkstra(Graph, s) {
             shortest[v] = Infinity;
         }
         prev[v] = null;
-        insert(Q, v, Graph);
+        Q[v] = Graph[v];
     }
 
     while (Object.keys(Q).length > 0) {
