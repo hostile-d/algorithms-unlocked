@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AlgorithmsUnlocked.Algorithms
 {
-    class ModularExponentiation
+    public class ModularExponentiation
     {
         public static int Run(int x, int d, int n)
         {
