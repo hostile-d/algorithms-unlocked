@@ -13,5 +13,5 @@ Algorithms paths:
 -   [String Matching](https://github.com/hostile-d/algorithms-unlocked/blob/master/Solutions/js/fa-string-matcher.js)
 -   [Longest common subsequence](https://github.com/hostile-d/algorithms-unlocked/blob/master/Solutions/js/longest-common-subsequence.js)
 -   [Selection Sort](https://github.com/hostile-d/algorithms-unlocked/blob/master/Solutions/js/selection-sort.js)
--   [Euclidic Algorithm](https://github.com/hostile-d/algorithms-unlocked/blob/master/Solutions/cs/AlgorithmsUnlocked/AlgorithmsUnlocked/Program.cs)
--   [Modular Exponentiation](https://github.com/hostile-d/algorithms-unlocked/blob/master/Solutions/cs/AlgorithmsUnlocked/AlgorithmsUnlocked/Program.cs)
+-   [Euclidic Algorithm](https://github.com/hostile-d/algorithms-unlocked/blob/master/Solutions/cs/AlgorithmsUnlocked/AlgorithmsUnlocked/Algorithms/Euclid.cs)
+-   [Modular Exponentiation](https://github.com/hostile-d/algorithms-unlocked/blob/master/Solutions/cs/AlgorithmsUnlocked/AlgorithmsUnlocked/Algorithms/ModularExponentiation.cs)
