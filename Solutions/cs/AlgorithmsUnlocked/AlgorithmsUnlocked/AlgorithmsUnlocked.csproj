@@ -32,6 +32,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithms\LZW.cs" />
     <Compile Include="Algorithms\ModularExponentiation.cs" />
     <Compile Include="Algorithms\Euclid.cs" />
     <Compile Include="Program.cs" />

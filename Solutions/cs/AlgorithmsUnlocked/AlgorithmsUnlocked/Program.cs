@@ -3,11 +3,11 @@ using AlgorithmsUnlocked.Algorithms;
 
 namespace AlgorithmsUnlocked
 {
-    class MainClass
+    public class MainClass
     {
         public static void Main(string[] args)
         {
-            TestModularExponentiation();
+            TextLZWCompressor();
             Console.ReadKey();
         }
 
@@ -24,6 +24,12 @@ namespace AlgorithmsUnlocked
         {
             var resultModularExponentiation = ModularExponentiation.Run(7, 560, 561);
             Console.WriteLine(resultModularExponentiation);
+        }
+
+        public static void TextLZWCompressor()
+        {
+            var result = LZW.Compressor("TATAGATCTTAATATA");
+            Console.WriteLine(string.Join(", ", result));
         }
     }
 }
