@@ -28,8 +28,9 @@ namespace AlgorithmsUnlocked
 
         public static void TextLZWCompressor()
         {
-            var result = LZW.Compressor("TATAGATCTTAATATA");
-            Console.WriteLine(string.Join(", ", result));
+            var compressed = LZW.Compressor("TATAGATCTTAATATA");
+            var decompressed = LZW.Decompressor(compressed);
+            Console.WriteLine(decompressed);
         }
     }
 }

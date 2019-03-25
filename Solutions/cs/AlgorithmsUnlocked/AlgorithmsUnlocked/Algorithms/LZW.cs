@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 
 namespace AlgorithmsUnlocked.Algorithms
 {
@@ -32,6 +33,35 @@ namespace AlgorithmsUnlocked.Algorithms
                 compressed.Add(dictionary[s]);
 
             return compressed;
+        }
+        public static string Decompressor(List<int> indices)
+        {
+            var dictionary = new Dictionary<int, string>();
+            for (var i = 0; i < 256; i++)
+            {
+                dictionary.Add(i, ((char)i).ToString());
+            }
+
+            var current = dictionary[indices[0]];
+            indices.RemoveAt(0);
+            var decompressed = new StringBuilder(current);
+
+            foreach (var k in indices)
+            {
+                string entry = null;
+                if (dictionary.ContainsKey(k))
+                    entry = dictionary[k];
+                else if (k == dictionary.Count)
+                    entry = current + current[0];
+
+                decompressed.Append(entry);
+
+                dictionary.Add(dictionary.Count, current + entry[0]);
+
+                current = entry;
+            }
+
+            return decompressed.ToString();
         }
     }
 }
