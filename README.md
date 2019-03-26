@@ -15,3 +15,4 @@ Algorithms paths:
 -   [Selection Sort](https://github.com/hostile-d/algorithms-unlocked/blob/master/Solutions/js/selection-sort.js)
 -   [Euclidic Algorithm](https://github.com/hostile-d/algorithms-unlocked/blob/master/Solutions/cs/AlgorithmsUnlocked/AlgorithmsUnlocked/Algorithms/Euclid.cs)
 -   [Modular Exponentiation](https://github.com/hostile-d/algorithms-unlocked/blob/master/Solutions/cs/AlgorithmsUnlocked/AlgorithmsUnlocked/Algorithms/ModularExponentiation.cs)
+-   [LZW](https://github.com/hostile-d/algorithms-unlocked/blob/master/Solutions/cs/AlgorithmsUnlocked/AlgorithmsUnlocked/Algorithms/LZW.cs)
